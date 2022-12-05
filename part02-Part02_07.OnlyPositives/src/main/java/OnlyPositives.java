@@ -10,11 +10,11 @@ public class OnlyPositives {
             System.out.println("Give a number:");
             int num = Integer.valueOf(scanner.nextLine());
             if (num == 0){
-                break;
+                break; // If number is 0, break out of loop
             } else if (num < 0){
-                System.out.println("Unsuitable number");
+                System.out.println("Unsuitable number"); // If num is negative number then print.
             } else {
-                System.out.println(num*num);
+                System.out.println(num*num); // If num is positive number return num^2
             }
         }
     }
