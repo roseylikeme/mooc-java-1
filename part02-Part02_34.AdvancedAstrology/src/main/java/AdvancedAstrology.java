@@ -2,15 +2,29 @@
 public class AdvancedAstrology {
 
     public static void printStars(int number) {
-        // part 1 of the exercise
+        String str = "*";
+		int n=number;
+		String repeated = new String(new char[n]).replace("\0", str);
+		System.out.print(repeated);
+        System.out.println("");
     }
 
     public static void printSpaces(int number) {
-        // part 1 of the exercise
+        String str = " ";
+		int n=number;
+		String repeated = new String(new char[n]).replace("\0", str);
+		System.out.print(repeated);
     }
 
     public static void printTriangle(int size) {
-        // part 2 of the exercise
+        int i = size; // width of triangle at base
+        int j = 1; 
+        while(j<=i){
+            printSpaces(i-j);
+            printStars(j);
+            j++;
+//            System.out.println("");
+        }
     }
 
     public static void christmasTree(int height) {
